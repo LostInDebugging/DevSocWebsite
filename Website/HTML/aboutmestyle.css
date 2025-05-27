@@ -1,0 +1,91 @@
+.topbanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 40%;
+    width: 100%;
+    background-color: black;
+}
+
+.bottombanner {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    height: 60%;
+    width: 100%;
+    background-color:gray;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+.circle_img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 30% 40%;
+    display: block;
+    border: 2px solid grey;
+}
+
+.backbutton {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 40px;
+    width: 80px;
+    border-radius: 10px;
+    border: none;
+    background-color: grey;
+    transition: all 0.3s ease;
+}
+
+.backbutton:hover {
+    transform: scale(1.1);
+}
+
+.infosection {
+    position: absolute;
+    background-color: lightgrey;
+    height: 400px;
+    width: 1000px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.tabcolumn {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.infotab {
+    border: 1px solid gray;
+    border-radius: 2px;
+    display: block;
+    background-color: darkgray;
+    width: 200px;
+    height: 100px;
+    transition: all 0.3s ease;
+}
+
+.infotab:hover {
+    background-color: rgb(128, 127, 127);
+    transform: scale(1.05);
+}
+
+.infotext {
+    width: 800px;
+    z-index: 1;
+}
+
+p {
+    margin: 15px;
+}
+

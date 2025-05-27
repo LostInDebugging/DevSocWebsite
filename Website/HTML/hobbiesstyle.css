@@ -1,0 +1,102 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.section {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+}
+
+.rightalign {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.subsection_left {
+    height: 20vh;
+    width: 70%;
+    margin: 10px 10px 10px 100px;
+}
+
+.subsection_right {
+    height: 20vh;
+    width: 70%;
+    margin: 10px 100px 10px 10px;
+}
+
+.section_special {
+    height: 10vh;
+}
+
+.section_title h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 128px;
+    margin: 0;
+}
+
+.gray {
+    background-color: gray;
+}
+
+.black {
+    background-color: black;
+    color: white;
+}
+
+.white {
+    background-color: white;
+    color: black;
+}
+
+.backbutton {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 40px;
+    width: 80px;
+    border-radius: 10px;
+    border: none;
+    background-color: grey;
+    transition: all 0.3s ease;
+}
+
+.backbutton:hover {
+    transform: scale(1.1);
+}
+
+.imagecont {
+    position: relative;
+    height: 20vh;
+    width: 20%;
+    margin: 30px;
+}
+
+.imagecontstatic {
+    height: 20vh;
+    width: 20%;
+    margin: 30px;
+}
+
+.imagecontstatic img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.imagecont img {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    transition: opacity 1s ease-in-out;
+}
+
+.imagecont img.active {
+    opacity: 1;
+}
